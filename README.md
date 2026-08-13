@@ -50,7 +50,11 @@ W / ↑    Move up
 S / ↓    Move down
 A / ←    Move left
 D / →    Move right
+```
+
 Project structure
+
+```bash
 science-valley/
 ├── assets/
 ├── scripts/
@@ -83,16 +87,4 @@ Development status
 Science Valley is currently an experimental personal project and is under active development.
 
 The current focus is building the basic game world, player movement, and laboratory environment before implementing the scientific gameplay systems.
-
-
-
-El README refleja lo que realmente hay ahora: `project.godot`, una escena de laboratorio y un único script `player.gd`; no conviene vender todavía sistemas que aún no existen.  
-
-
-### 3. Revisa el README
-
-
-```bash
-git diff -- README.md
-```
 
