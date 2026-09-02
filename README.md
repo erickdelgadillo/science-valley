@@ -28,10 +28,13 @@ The project is currently in an early prototype stage.
 
 Implemented so far:
 
-- [x] Godot project structure
 - [x] Initial laboratory scene
 - [x] Player character
 - [x] Basic 2D movement
+- [x] Camera following player
+- [x] Laboratory walls
+- [x] Wall collisions
+- [x] Laboratory doorway
 - [ ] Player animations
 - [ ] Interactable laboratory objects
 - [ ] Experiment system
