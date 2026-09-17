@@ -1,10 +1,22 @@
-[gd_resource type="SpriteFrames" load_steps=22 format=3]
+[gd_resource type="SpriteFrames" format=3 uid="uid://dq6vlyme7vysw"]
 
-[ext_resource type="Texture2D" path="res://assets/characters/player_scientist.png" id="1_player"]
+[ext_resource type="Texture2D" uid="uid://dq4p2lllf2omd" path="res://assets/characters/player_scientist.png" id="1_player"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_down_idle"]
 atlas = ExtResource("1_player")
 region = Rect2(56, 41, 200, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_left_idle"]
+atlas = ExtResource("1_player")
+region = Rect2(56, 291, 200, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_right_idle"]
+atlas = ExtResource("1_player")
+region = Rect2(56, 544, 200, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_up_idle"]
+atlas = ExtResource("1_player")
+region = Rect2(56, 797, 200, 250)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_down_walk_1"]
 atlas = ExtResource("1_player")
@@ -22,10 +34,6 @@ region = Rect2(870, 45, 200, 250)
 atlas = ExtResource("1_player")
 region = Rect2(1142, 45, 200, 250)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_left_idle"]
-atlas = ExtResource("1_player")
-region = Rect2(56, 291, 200, 250)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_left_walk_1"]
 atlas = ExtResource("1_player")
 region = Rect2(327, 291, 200, 250)
@@ -42,10 +50,6 @@ region = Rect2(870, 291, 200, 250)
 atlas = ExtResource("1_player")
 region = Rect2(1142, 291, 200, 250)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_right_idle"]
-atlas = ExtResource("1_player")
-region = Rect2(56, 544, 200, 250)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_right_walk_1"]
 atlas = ExtResource("1_player")
 region = Rect2(327, 542, 200, 250)
@@ -61,10 +65,6 @@ region = Rect2(870, 542, 200, 250)
 [sub_resource type="AtlasTexture" id="AtlasTexture_right_walk_4"]
 atlas = ExtResource("1_player")
 region = Rect2(1142, 542, 200, 250)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_up_idle"]
-atlas = ExtResource("1_player")
-region = Rect2(56, 797, 200, 250)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_up_walk_1"]
 atlas = ExtResource("1_player")
@@ -88,7 +88,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_down_idle")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle_down",
 "speed": 5.0
 }, {
@@ -96,7 +96,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_left_idle")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle_left",
 "speed": 5.0
 }, {
@@ -104,7 +104,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_right_idle")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle_right",
 "speed": 5.0
 }, {
@@ -112,7 +112,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_up_idle")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle_up",
 "speed": 5.0
 }, {
@@ -129,7 +129,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_down_walk_4")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk_down",
 "speed": 8.0
 }, {
@@ -146,7 +146,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_left_walk_4")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk_left",
 "speed": 8.0
 }, {
@@ -163,7 +163,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_right_walk_4")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk_right",
 "speed": 8.0
 }, {
@@ -180,7 +180,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_up_walk_4")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk_up",
 "speed": 8.0
 }]

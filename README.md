@@ -36,6 +36,10 @@ Implemented so far:
 - [x] Wall collisions
 - [x] Laboratory doorway
 - [x] Player idle and walking animations in four directions
+- [x] Laboratory equipment and furniture
+- [x] Corridor connecting the laboratory to an office
+- [x] Automatic laboratory coat inside the lab
+- [x] Headphones restored outside the lab
 - [ ] Interactable laboratory objects
 - [ ] Experiment system
 - [ ] Sample collection
