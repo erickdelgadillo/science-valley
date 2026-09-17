@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://rjhxuhbhpfxc" path="res://assets/tiles/floor_placeholder.svg" id="1_3e1xo"]
 [ext_resource type="Script" uid="uid://dr50hy8q6o0kb" path="res://scripts/player.gd" id="2_uw7jv"]
-[ext_resource type="Texture2D" uid="uid://do0vep3o3byt1" path="res://icon.svg" id="3_e2xd3"]
+[ext_resource type="SpriteFrames" path="res://assets/characters/player_scientist_frames.tres" id="3_player_frames"]
 [ext_resource type="Texture2D" uid="uid://ckh6u836pwl7b" path="res://assets/tiles/wall_placeholder.svg" id="4_e2xd3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6kv01"]
@@ -15,7 +15,7 @@ tile_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_6kv01")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k56jn"]
-size = Vector2(24, 24)
+size = Vector2(18, 12)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dtsd6"]
 texture = ExtResource("4_e2xd3")
@@ -35,20 +35,22 @@ tile_map_data = PackedByteArray("AAAAABMAAAAAAAAAAAABABMAAAAAAAAAAAACABMAAAAAAAA
 tile_set = SubResource("TileSet_k56jn")
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=856489920]
-position = Vector2(-6, 1)
+position = Vector2(272, 467)
 script = ExtResource("2_uw7jv")
 
-[node name="Sprite" type="Sprite2D" parent="Player" unique_id=2102034906]
-position = Vector2(278.00003, 466.00006)
-scale = Vector2(0.18, 0.18)
-texture = ExtResource("3_e2xd3")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=2102034906]
+texture_filter = 1
+scale = Vector2(0.2, 0.2)
+sprite_frames = ExtResource("3_player_frames")
+animation = &"idle_down"
+offset = Vector2(0, -132)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=742969372]
-position = Vector2(278, 466)
+position = Vector2(0, -6)
 shape = SubResource("RectangleShape2D_k56jn")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1988309676]
-position = Vector2(277, 467)
+position = Vector2(-1, 1)
 
 [node name="Walls" type="TileMapLayer" parent="." unique_id=1734943374]
 position = Vector2(-1, 1)
