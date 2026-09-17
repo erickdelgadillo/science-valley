@@ -43,7 +43,7 @@ texture_filter = 1
 scale = Vector2(0.2, 0.2)
 sprite_frames = ExtResource("3_player_frames")
 animation = &"idle_down"
-offset = Vector2(0, -132)
+offset = Vector2(0, -115)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=742969372]
 position = Vector2(0, -6)
