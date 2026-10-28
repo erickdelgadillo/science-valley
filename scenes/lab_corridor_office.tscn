@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://cdlbwaxqi0bwr"]
+
+[ext_resource type="Script" uid="uid://crd5whpe8nvt5" path="res://scripts/lab_zone.gd" id="2_zone"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape_corridor_wall"]
+size = Vector2(16, 272)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape_office_side"]
+size = Vector2(16, 304)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape_office_bottom"]
+size = Vector2(352, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape_office_top"]
+size = Vector2(144, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape_lab_zone"]
+size = Vector2(640, 384)
+
+[node name="LabCorridorOffice" type="Node2D" unique_id=308433493]
+
+[node name="CorridorFloor" type="Polygon2D" parent="." unique_id=2127548871]
+z_index = -10
+position = Vector2(0, 9.771423)
+scale = Vector2(1, 0.9892857)
+color = Color(0.56, 0.64, 0.68, 1)
+polygon = PackedVector2Array(287.99997, 636.0433, 319.99997, 636.0433, 351.99997, 636.0433, 352, 912, 288, 912, 288, 698.4325)
+
+[node name="OfficeFloor" type="Polygon2D" parent="." unique_id=919437738]
+z_index = -10
+color = Color(0.72, 0.7, 0.65, 1)
+polygon = PackedVector2Array(160, 896, 480, 896, 480, 1184, 160, 1184)
+
+[node name="WallsVisual" type="Node2D" parent="." unique_id=58847525]
+z_index = -5
+
+[node name="CorridorLeft" type="Polygon2D" parent="WallsVisual" unique_id=1402285547]
+color = Color(0.18, 0.24, 0.29, 1)
+polygon = PackedVector2Array(272, 640, 288, 640, 288, 912, 272, 912)
+
+[node name="CorridorRight" type="Polygon2D" parent="WallsVisual" unique_id=1757407372]
+color = Color(0.18, 0.24, 0.29, 1)
+polygon = PackedVector2Array(352, 640, 368, 640, 368, 912, 352, 912)
+
+[node name="OfficeLeft" type="Polygon2D" parent="WallsVisual" unique_id=1743013979]
+color = Color(0.18, 0.24, 0.29, 1)
+polygon = PackedVector2Array(144, 896, 160, 896, 160, 1200, 144, 1200)
+
+[node name="OfficeRight" type="Polygon2D" parent="WallsVisual" unique_id=1165198890]
+color = Color(0.18, 0.24, 0.29, 1)
+polygon = PackedVector2Array(480, 896, 496, 896, 496, 1200, 480, 1200)
+
+[node name="OfficeBottom" type="Polygon2D" parent="WallsVisual" unique_id=1310861015]
+color = Color(0.18, 0.24, 0.29, 1)
+polygon = PackedVector2Array(144, 1184, 496, 1184, 496, 1200, 144, 1200)
+
+[node name="OfficeTopLeft" type="Polygon2D" parent="WallsVisual" unique_id=1555084174]
+color = Color(0.18, 0.24, 0.29, 1)
+polygon = PackedVector2Array(144, 896, 288, 896, 288, 912, 144, 912)
+
+[node name="OfficeTopRight" type="Polygon2D" parent="WallsVisual" unique_id=239185495]
+color = Color(0.18, 0.24, 0.29, 1)
+polygon = PackedVector2Array(352, 896, 496, 896, 496, 912, 352, 912)
+
+[node name="ArchitectureCollisions" type="StaticBody2D" parent="." unique_id=804646548]
+
+[node name="CorridorLeft" type="CollisionShape2D" parent="ArchitectureCollisions" unique_id=694186778]
+position = Vector2(280, 776)
+shape = SubResource("RectangleShape_corridor_wall")
+
+[node name="CorridorRight" type="CollisionShape2D" parent="ArchitectureCollisions" unique_id=1488241453]
+position = Vector2(360, 776)
+shape = SubResource("RectangleShape_corridor_wall")
+
+[node name="OfficeLeft" type="CollisionShape2D" parent="ArchitectureCollisions" unique_id=781429209]
+position = Vector2(152, 1048)
+shape = SubResource("RectangleShape_office_side")
+
+[node name="OfficeRight" type="CollisionShape2D" parent="ArchitectureCollisions" unique_id=1994347028]
+position = Vector2(488, 1048)
+shape = SubResource("RectangleShape_office_side")
+
+[node name="OfficeBottom" type="CollisionShape2D" parent="ArchitectureCollisions" unique_id=1985194817]
+position = Vector2(320, 1192)
+shape = SubResource("RectangleShape_office_bottom")
+
+[node name="OfficeTopLeft" type="CollisionShape2D" parent="ArchitectureCollisions" unique_id=464267968]
+position = Vector2(216, 904)
+shape = SubResource("RectangleShape_office_top")
+
+[node name="OfficeTopRight" type="CollisionShape2D" parent="ArchitectureCollisions" unique_id=1270063521]
+position = Vector2(424, 904)
+shape = SubResource("RectangleShape_office_top")
+
+[node name="LabZone" type="Area2D" parent="." unique_id=382659444]
+position = Vector2(320, 432)
+script = ExtResource("2_zone")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LabZone" unique_id=1446664218]
+shape = SubResource("RectangleShape_lab_zone")
+
+[node name="Equipment" type="Node2D" parent="." unique_id=1457206114]
+
+[node name="EquipmentCollisions" type="StaticBody2D" parent="." unique_id=192283800]

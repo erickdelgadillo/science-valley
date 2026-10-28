@@ -35,7 +35,11 @@ Implemented so far:
 - [x] Laboratory walls
 - [x] Wall collisions
 - [x] Laboratory doorway
-- [ ] Player animations
+- [x] Player idle and walking animations in four directions
+- [x] Laboratory equipment and furniture
+- [x] Corridor connecting the laboratory to an office
+- [x] Automatic laboratory coat inside the lab
+- [x] Headphones restored outside the lab
 - [ ] Interactable laboratory objects
 - [ ] Experiment system
 - [ ] Sample collection
@@ -60,6 +64,10 @@ Project structure
 ```bash
 science-valley/
 ├── assets/
+│   ├── characters/
+│   │   ├── player_scientist.png
+│   │   └── player_scientist_frames.tres
+│   └── tiles/
 ├── scripts/
 │   └── player.gd
 ├── lab.tscn
@@ -90,4 +98,3 @@ Development status
 Science Valley is currently an experimental personal project and is under active development.
 
 The current focus is building the basic game world, player movement, and laboratory environment before implementing the scientific gameplay systems.
-

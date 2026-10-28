@@ -1,0 +1,102 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b2ec04dix8yp0"]
+
+[ext_resource type="Texture2D" uid="uid://cbak64ii3f517" path="res://assets/props/lab_equipment.png" id="1_equipment"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_biosafety"]
+atlas = ExtResource("1_equipment")
+region = Rect2(768, 0, 384, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bookshelf"]
+atlas = ExtResource("1_equipment")
+region = Rect2(1152, 512, 384, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_centrifuge"]
+atlas = ExtResource("1_equipment")
+region = Rect2(384, 512, 384, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fridge"]
+atlas = ExtResource("1_equipment")
+region = Rect2(1152, 0, 384, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fume_hood"]
+atlas = ExtResource("1_equipment")
+region = Rect2(384, 0, 384, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_microscope"]
+atlas = ExtResource("1_equipment")
+region = Rect2(0, 512, 384, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_office_desk"]
+atlas = ExtResource("1_equipment")
+region = Rect2(768, 512, 384, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_workbench"]
+atlas = ExtResource("1_equipment")
+region = Rect2(0, 0, 384, 512)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_biosafety")
+}],
+"loop": 0,
+"name": &"biosafety",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bookshelf")
+}],
+"loop": 0,
+"name": &"bookshelf",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_centrifuge")
+}],
+"loop": 0,
+"name": &"centrifuge",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fridge")
+}],
+"loop": 0,
+"name": &"fridge",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fume_hood")
+}],
+"loop": 0,
+"name": &"fume_hood",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_microscope")
+}],
+"loop": 0,
+"name": &"microscope",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_office_desk")
+}],
+"loop": 0,
+"name": &"office_desk",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_workbench")
+}],
+"loop": 0,
+"name": &"workbench",
+"speed": 1.0
+}]
