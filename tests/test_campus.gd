@@ -21,7 +21,7 @@ func _initialize() -> void:
         push_error("Player spawn location changed")
         quit(1)
         return
-    var script := campus.get_script()
+    var script: Script = campus.get_script()
     if script == null or script.get_script_constant_map().get("ROOMS", []).size() != 7:
         push_error("Expected seven connected spaces")
         quit(1)
