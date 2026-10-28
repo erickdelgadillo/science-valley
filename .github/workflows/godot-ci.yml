@@ -25,5 +25,7 @@ jobs:
           ./godot --version
       - name: Import project and validate scripts and resources
         run: ./godot --headless --path . --editor --import --quit
-      - name: Run scene smoke tests
+      - name: Run original laboratory smoke test
         run: ./godot --headless --path . --script res://tests/smoke_test.gd
+      - name: Run connected campus smoke test
+        run: ./godot --headless --path . --script res://tests/test_campus.gd
