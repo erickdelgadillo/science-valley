@@ -14,15 +14,15 @@ const FLOOR_ZERO := [
 const FLOOR_ONE := [
     {"name": "LABORATORIO GENERAL", "rect": Rect2(-576, -640, 576, 640), "color": Color("#d6e9cb"), "door": "bottom"},
     {"name": "EXTRACCIÓN DE ADN", "rect": Rect2(0, -640, 576, 640), "color": Color("#ccd6f1"), "door": "bottom"},
-    {"name": "REACTIVOS Y CONSUMIBLES", "rect": Rect2(-576, 128, 240, 832), "color": Color("#e4d5ea"), "door": "top"},
-    {"name": "ULTRACONGELADORES", "rect": Rect2(-336, 128, 240, 832), "color": Color("#cbdcf0"), "door": "top"},
+    {"name": "REACTIVOS Y CONSUMIBLES", "rect": Rect2(-576, 128, 240, 608), "color": Color("#e4d5ea"), "door": "top"},
+    {"name": "ULTRACONGELADORES", "rect": Rect2(-336, 128, 240, 608), "color": Color("#cbdcf0"), "door": "top"},
     {"name": "ALMACÉN DE CAMPO", "rect": Rect2(96, 128, 480, 288), "color": Color("#c8dcda"), "door": "left"},
     {"name": "BAÑO UNISEX", "rect": Rect2(96, 416, 480, 160), "color": Color("#e5dbed"), "door": "left"},
     {"name": "SIN ASIGNAR", "rect": Rect2(96, 576, 480, 160), "color": Color("#f1f0eb"), "door": "left"},
     {"name": "MI DESPACHO", "rect": Rect2(96, 736, 480, 224), "color": Color("#f0ddbd"), "door": "left"}
 ]
 # On level 1, the office in the west wing is at the corridor's end.
-const DIRECTOR := {"name": "DESPACHO DEL DIRECTOR", "rect": Rect2(-576, 960, 480, 224), "color": Color("#ead4c1"), "door": "right"}
+const DIRECTOR := {"name": "DESPACHO DEL DIRECTOR", "rect": Rect2(-576, 736, 480, 224), "color": Color("#ead4c1"), "door": "right"}
 var current_floor: int = 0
 var constructed: Node2D
 var prompt: Label
