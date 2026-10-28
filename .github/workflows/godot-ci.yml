@@ -1,0 +1,29 @@
+name: Godot CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download Godot 4.7 stable
+        run: |
+          curl -fL --retry 3 -o godot.zip \
+            https://github.com/godotengine/godot/releases/download/4.7-stable/Godot_v4.7-stable_linux.x86_64.zip
+          unzip -q godot.zip
+          mv Godot_v4.7-stable_linux.x86_64 godot
+          chmod +x godot
+          ./godot --version
+      - name: Import project and validate scripts and resources
+        run: ./godot --headless --path . --editor --import --quit
+      - name: Run scene smoke tests
+        run: ./godot --headless --path . --script res://tests/smoke_test.gd
