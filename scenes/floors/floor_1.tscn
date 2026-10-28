@@ -1,0 +1,895 @@
+[gd_scene format=3]
+
+[sub_resource type="RectangleShape2D" id="wall_1"]
+size = Vector2(588, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_2"]
+size = Vector2(244, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_3"]
+size = Vector2(244, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_4"]
+size = Vector2(12, 652)
+
+[sub_resource type="RectangleShape2D" id="wall_5"]
+size = Vector2(12, 652)
+
+[sub_resource type="RectangleShape2D" id="wall_6"]
+size = Vector2(588, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_7"]
+size = Vector2(244, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_8"]
+size = Vector2(244, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_9"]
+size = Vector2(12, 652)
+
+[sub_resource type="RectangleShape2D" id="wall_10"]
+size = Vector2(12, 652)
+
+[sub_resource type="RectangleShape2D" id="wall_11"]
+size = Vector2(76, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_12"]
+size = Vector2(76, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_13"]
+size = Vector2(252, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_14"]
+size = Vector2(12, 492)
+
+[sub_resource type="RectangleShape2D" id="wall_15"]
+size = Vector2(12, 492)
+
+[sub_resource type="RectangleShape2D" id="wall_16"]
+size = Vector2(76, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_17"]
+size = Vector2(76, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_18"]
+size = Vector2(252, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_19"]
+size = Vector2(12, 492)
+
+[sub_resource type="RectangleShape2D" id="wall_20"]
+size = Vector2(12, 492)
+
+[sub_resource type="RectangleShape2D" id="wall_21"]
+size = Vector2(492, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_22"]
+size = Vector2(492, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_23"]
+size = Vector2(12, 100)
+
+[sub_resource type="RectangleShape2D" id="wall_24"]
+size = Vector2(12, 100)
+
+[sub_resource type="RectangleShape2D" id="wall_25"]
+size = Vector2(12, 300)
+
+[sub_resource type="RectangleShape2D" id="wall_26"]
+size = Vector2(492, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_27"]
+size = Vector2(492, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_28"]
+size = Vector2(12, 28)
+
+[sub_resource type="RectangleShape2D" id="wall_29"]
+size = Vector2(12, 28)
+
+[sub_resource type="RectangleShape2D" id="wall_30"]
+size = Vector2(12, 156)
+
+[sub_resource type="RectangleShape2D" id="wall_31"]
+size = Vector2(492, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_32"]
+size = Vector2(492, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_33"]
+size = Vector2(12, 28)
+
+[sub_resource type="RectangleShape2D" id="wall_34"]
+size = Vector2(12, 28)
+
+[sub_resource type="RectangleShape2D" id="wall_35"]
+size = Vector2(12, 156)
+
+[sub_resource type="RectangleShape2D" id="wall_36"]
+size = Vector2(492, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_37"]
+size = Vector2(492, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_38"]
+size = Vector2(12, 236)
+
+[sub_resource type="RectangleShape2D" id="wall_39"]
+size = Vector2(12, 68)
+
+[sub_resource type="RectangleShape2D" id="wall_40"]
+size = Vector2(12, 68)
+
+[sub_resource type="RectangleShape2D" id="wall_41"]
+size = Vector2(492, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_42"]
+size = Vector2(492, 12)
+
+[sub_resource type="RectangleShape2D" id="wall_43"]
+size = Vector2(12, 68)
+
+[sub_resource type="RectangleShape2D" id="wall_44"]
+size = Vector2(12, 68)
+
+[sub_resource type="RectangleShape2D" id="wall_45"]
+size = Vector2(12, 236)
+
+[sub_resource type="RectangleShape2D" id="wall_46"]
+size = Vector2(204, 12)
+
+[node name="Floor1" type="Node2D"]
+
+[node name="Rooms" type="Node2D" parent="."]
+
+[node name="Distributor" type="Polygon2D" parent="."]
+color = Color(0.866667, 0.862745, 0.843137, 1)
+polygon = PackedVector2Array(0, 0, 1152, 0, 1152, 96, 0, 96)
+position = Vector2(0, 640)
+
+[node name="Corridor" type="Polygon2D" parent="."]
+color = Color(0.866667, 0.862745, 0.843137, 1)
+polygon = PackedVector2Array(0, 0, 192, 0, 192, 704, 0, 704)
+position = Vector2(480, 736)
+
+[node name="GeneralLab" type="Node2D" parent="Rooms"]
+position = Vector2(0, 0)
+metadata/is_lab = true
+metadata/room_size = Vector2(576, 640)
+
+[node name="Floor" type="Polygon2D" parent="Rooms/GeneralLab"]
+color = Color(0.839216, 0.913725, 0.796078, 1)
+polygon = PackedVector2Array(0, 0, 576, 0, 576, 640, 0, 640)
+position = Vector2(0, 0)
+
+[node name="RoomLabel" type="Label" parent="Rooms/GeneralLab"]
+position = Vector2(14, 16)
+text = "LABORATORIO GENERAL"
+
+[node name="DnaLab" type="Node2D" parent="Rooms"]
+position = Vector2(576, 0)
+metadata/is_lab = true
+metadata/room_size = Vector2(576, 640)
+
+[node name="Floor" type="Polygon2D" parent="Rooms/DnaLab"]
+color = Color(0.8, 0.839216, 0.945098, 1)
+polygon = PackedVector2Array(0, 0, 576, 0, 576, 640, 0, 640)
+position = Vector2(0, 0)
+
+[node name="RoomLabel" type="Label" parent="Rooms/DnaLab"]
+position = Vector2(14, 16)
+text = "EXTRACCIÓN DE ADN"
+
+[node name="Reagents" type="Node2D" parent="Rooms"]
+position = Vector2(0, 736)
+metadata/is_lab = false
+metadata/room_size = Vector2(240, 480)
+
+[node name="Floor" type="Polygon2D" parent="Rooms/Reagents"]
+color = Color(0.894118, 0.835294, 0.917647, 1)
+polygon = PackedVector2Array(0, 0, 240, 0, 240, 480, 0, 480)
+position = Vector2(0, 0)
+
+[node name="RoomLabel" type="Label" parent="Rooms/Reagents"]
+position = Vector2(14, 16)
+text = "REACTIVOS Y CONSUMIBLES"
+
+[node name="Freezers" type="Node2D" parent="Rooms"]
+position = Vector2(240, 736)
+metadata/is_lab = false
+metadata/room_size = Vector2(240, 480)
+
+[node name="Floor" type="Polygon2D" parent="Rooms/Freezers"]
+color = Color(0.796078, 0.862745, 0.941176, 1)
+polygon = PackedVector2Array(0, 0, 240, 0, 240, 480, 0, 480)
+position = Vector2(0, 0)
+
+[node name="RoomLabel" type="Label" parent="Rooms/Freezers"]
+position = Vector2(14, 16)
+text = "ULTRACONGELADORES"
+
+[node name="FieldStorage" type="Node2D" parent="Rooms"]
+position = Vector2(672, 736)
+metadata/is_lab = false
+metadata/room_size = Vector2(480, 288)
+
+[node name="Floor" type="Polygon2D" parent="Rooms/FieldStorage"]
+color = Color(0.784314, 0.862745, 0.854902, 1)
+polygon = PackedVector2Array(0, 0, 480, 0, 480, 288, 0, 288)
+position = Vector2(0, 0)
+
+[node name="RoomLabel" type="Label" parent="Rooms/FieldStorage"]
+position = Vector2(14, 16)
+text = "ALMACÉN DE CAMPO"
+
+[node name="Bathroom" type="Node2D" parent="Rooms"]
+position = Vector2(672, 1024)
+metadata/is_lab = false
+metadata/room_size = Vector2(480, 144)
+
+[node name="Floor" type="Polygon2D" parent="Rooms/Bathroom"]
+color = Color(0.898039, 0.858824, 0.929412, 1)
+polygon = PackedVector2Array(0, 0, 480, 0, 480, 144, 0, 144)
+position = Vector2(0, 0)
+
+[node name="RoomLabel" type="Label" parent="Rooms/Bathroom"]
+position = Vector2(14, 16)
+text = "BAÑO UNISEX"
+
+[node name="Unassigned" type="Node2D" parent="Rooms"]
+position = Vector2(672, 1168)
+metadata/is_lab = false
+metadata/room_size = Vector2(480, 144)
+
+[node name="Floor" type="Polygon2D" parent="Rooms/Unassigned"]
+color = Color(0.933333, 0.917647, 0.886275, 1)
+polygon = PackedVector2Array(0, 0, 480, 0, 480, 144, 0, 144)
+position = Vector2(0, 0)
+
+[node name="RoomLabel" type="Label" parent="Rooms/Unassigned"]
+position = Vector2(14, 16)
+text = "SIN ASIGNAR"
+
+[node name="DirectorOffice" type="Node2D" parent="Rooms"]
+position = Vector2(0, 1216)
+metadata/is_lab = false
+metadata/room_size = Vector2(480, 224)
+
+[node name="Floor" type="Polygon2D" parent="Rooms/DirectorOffice"]
+color = Color(0.917647, 0.831373, 0.756863, 1)
+polygon = PackedVector2Array(0, 0, 480, 0, 480, 224, 0, 224)
+position = Vector2(0, 0)
+
+[node name="RoomLabel" type="Label" parent="Rooms/DirectorOffice"]
+position = Vector2(14, 16)
+text = "DESPACHO DEL DIRECTOR"
+
+[node name="MyOffice" type="Node2D" parent="Rooms"]
+position = Vector2(672, 1216)
+metadata/is_lab = false
+metadata/room_size = Vector2(480, 224)
+
+[node name="Floor" type="Polygon2D" parent="Rooms/MyOffice"]
+color = Color(0.941176, 0.866667, 0.741176, 1)
+polygon = PackedVector2Array(0, 0, 480, 0, 480, 224, 0, 224)
+position = Vector2(0, 0)
+
+[node name="RoomLabel" type="Label" parent="Rooms/MyOffice"]
+position = Vector2(14, 16)
+text = "MI DESPACHO"
+
+[node name="StairsFloor" type="Polygon2D" parent="."]
+color = Color(0.74902, 0.827451, 0.909804, 1)
+polygon = PackedVector2Array(0, 0, 126, 0, 126, 80, 0, 80)
+position = Vector2(32, 648)
+
+[node name="StairsLabel" type="Label" parent="."]
+position = Vector2(40, 665)
+text = "ESCALERA [E]"
+
+[node name="LiftFloor" type="Polygon2D" parent="."]
+color = Color(0.831373, 0.784314, 0.898039, 1)
+polygon = PackedVector2Array(0, 0, 126, 0, 126, 80, 0, 80)
+position = Vector2(994, 648)
+
+[node name="LiftLabel" type="Label" parent="."]
+position = Vector2(1000, 665)
+text = "ASCENSOR [E]"
+
+[node name="Wall1" type="StaticBody2D" parent="Rooms/GeneralLab"]
+position = Vector2(288, 0)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/GeneralLab/Wall1"]
+shape = SubResource("wall_1")
+
+[node name="Visual" type="Line2D" parent="Rooms/GeneralLab/Wall1"]
+points = PackedVector2Array(-288, 0, 288, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall2" type="StaticBody2D" parent="Rooms/GeneralLab"]
+position = Vector2(116, 640)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/GeneralLab/Wall2"]
+shape = SubResource("wall_2")
+
+[node name="Visual" type="Line2D" parent="Rooms/GeneralLab/Wall2"]
+points = PackedVector2Array(-116, 0, 116, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall3" type="StaticBody2D" parent="Rooms/GeneralLab"]
+position = Vector2(460, 640)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/GeneralLab/Wall3"]
+shape = SubResource("wall_3")
+
+[node name="Visual" type="Line2D" parent="Rooms/GeneralLab/Wall3"]
+points = PackedVector2Array(-116, 0, 116, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall4" type="StaticBody2D" parent="Rooms/GeneralLab"]
+position = Vector2(0, 320)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/GeneralLab/Wall4"]
+shape = SubResource("wall_4")
+
+[node name="Visual" type="Line2D" parent="Rooms/GeneralLab/Wall4"]
+points = PackedVector2Array(0, -320, 0, 320)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall5" type="StaticBody2D" parent="Rooms/GeneralLab"]
+position = Vector2(576, 320)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/GeneralLab/Wall5"]
+shape = SubResource("wall_5")
+
+[node name="Visual" type="Line2D" parent="Rooms/GeneralLab/Wall5"]
+points = PackedVector2Array(0, -320, 0, 320)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall6" type="StaticBody2D" parent="Rooms/DnaLab"]
+position = Vector2(288, 0)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/DnaLab/Wall6"]
+shape = SubResource("wall_6")
+
+[node name="Visual" type="Line2D" parent="Rooms/DnaLab/Wall6"]
+points = PackedVector2Array(-288, 0, 288, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall7" type="StaticBody2D" parent="Rooms/DnaLab"]
+position = Vector2(116, 640)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/DnaLab/Wall7"]
+shape = SubResource("wall_7")
+
+[node name="Visual" type="Line2D" parent="Rooms/DnaLab/Wall7"]
+points = PackedVector2Array(-116, 0, 116, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall8" type="StaticBody2D" parent="Rooms/DnaLab"]
+position = Vector2(460, 640)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/DnaLab/Wall8"]
+shape = SubResource("wall_8")
+
+[node name="Visual" type="Line2D" parent="Rooms/DnaLab/Wall8"]
+points = PackedVector2Array(-116, 0, 116, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall9" type="StaticBody2D" parent="Rooms/DnaLab"]
+position = Vector2(0, 320)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/DnaLab/Wall9"]
+shape = SubResource("wall_9")
+
+[node name="Visual" type="Line2D" parent="Rooms/DnaLab/Wall9"]
+points = PackedVector2Array(0, -320, 0, 320)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall10" type="StaticBody2D" parent="Rooms/DnaLab"]
+position = Vector2(576, 320)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/DnaLab/Wall10"]
+shape = SubResource("wall_10")
+
+[node name="Visual" type="Line2D" parent="Rooms/DnaLab/Wall10"]
+points = PackedVector2Array(0, -320, 0, 320)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall11" type="StaticBody2D" parent="Rooms/Reagents"]
+position = Vector2(32, 0)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Reagents/Wall11"]
+shape = SubResource("wall_11")
+
+[node name="Visual" type="Line2D" parent="Rooms/Reagents/Wall11"]
+points = PackedVector2Array(-32, 0, 32, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall12" type="StaticBody2D" parent="Rooms/Reagents"]
+position = Vector2(208, 0)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Reagents/Wall12"]
+shape = SubResource("wall_12")
+
+[node name="Visual" type="Line2D" parent="Rooms/Reagents/Wall12"]
+points = PackedVector2Array(-32, 0, 32, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall13" type="StaticBody2D" parent="Rooms/Reagents"]
+position = Vector2(120, 480)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Reagents/Wall13"]
+shape = SubResource("wall_13")
+
+[node name="Visual" type="Line2D" parent="Rooms/Reagents/Wall13"]
+points = PackedVector2Array(-120, 0, 120, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall14" type="StaticBody2D" parent="Rooms/Reagents"]
+position = Vector2(0, 240)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Reagents/Wall14"]
+shape = SubResource("wall_14")
+
+[node name="Visual" type="Line2D" parent="Rooms/Reagents/Wall14"]
+points = PackedVector2Array(0, -240, 0, 240)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall15" type="StaticBody2D" parent="Rooms/Reagents"]
+position = Vector2(240, 240)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Reagents/Wall15"]
+shape = SubResource("wall_15")
+
+[node name="Visual" type="Line2D" parent="Rooms/Reagents/Wall15"]
+points = PackedVector2Array(0, -240, 0, 240)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall16" type="StaticBody2D" parent="Rooms/Freezers"]
+position = Vector2(32, 0)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Freezers/Wall16"]
+shape = SubResource("wall_16")
+
+[node name="Visual" type="Line2D" parent="Rooms/Freezers/Wall16"]
+points = PackedVector2Array(-32, 0, 32, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall17" type="StaticBody2D" parent="Rooms/Freezers"]
+position = Vector2(208, 0)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Freezers/Wall17"]
+shape = SubResource("wall_17")
+
+[node name="Visual" type="Line2D" parent="Rooms/Freezers/Wall17"]
+points = PackedVector2Array(-32, 0, 32, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall18" type="StaticBody2D" parent="Rooms/Freezers"]
+position = Vector2(120, 480)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Freezers/Wall18"]
+shape = SubResource("wall_18")
+
+[node name="Visual" type="Line2D" parent="Rooms/Freezers/Wall18"]
+points = PackedVector2Array(-120, 0, 120, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall19" type="StaticBody2D" parent="Rooms/Freezers"]
+position = Vector2(0, 240)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Freezers/Wall19"]
+shape = SubResource("wall_19")
+
+[node name="Visual" type="Line2D" parent="Rooms/Freezers/Wall19"]
+points = PackedVector2Array(0, -240, 0, 240)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall20" type="StaticBody2D" parent="Rooms/Freezers"]
+position = Vector2(240, 240)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Freezers/Wall20"]
+shape = SubResource("wall_20")
+
+[node name="Visual" type="Line2D" parent="Rooms/Freezers/Wall20"]
+points = PackedVector2Array(0, -240, 0, 240)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall21" type="StaticBody2D" parent="Rooms/FieldStorage"]
+position = Vector2(240, 0)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/FieldStorage/Wall21"]
+shape = SubResource("wall_21")
+
+[node name="Visual" type="Line2D" parent="Rooms/FieldStorage/Wall21"]
+points = PackedVector2Array(-240, 0, 240, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall22" type="StaticBody2D" parent="Rooms/FieldStorage"]
+position = Vector2(240, 288)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/FieldStorage/Wall22"]
+shape = SubResource("wall_22")
+
+[node name="Visual" type="Line2D" parent="Rooms/FieldStorage/Wall22"]
+points = PackedVector2Array(-240, 0, 240, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall23" type="StaticBody2D" parent="Rooms/FieldStorage"]
+position = Vector2(0, 44)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/FieldStorage/Wall23"]
+shape = SubResource("wall_23")
+
+[node name="Visual" type="Line2D" parent="Rooms/FieldStorage/Wall23"]
+points = PackedVector2Array(0, -44, 0, 44)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall24" type="StaticBody2D" parent="Rooms/FieldStorage"]
+position = Vector2(0, 244)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/FieldStorage/Wall24"]
+shape = SubResource("wall_24")
+
+[node name="Visual" type="Line2D" parent="Rooms/FieldStorage/Wall24"]
+points = PackedVector2Array(0, -44, 0, 44)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall25" type="StaticBody2D" parent="Rooms/FieldStorage"]
+position = Vector2(480, 144)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/FieldStorage/Wall25"]
+shape = SubResource("wall_25")
+
+[node name="Visual" type="Line2D" parent="Rooms/FieldStorage/Wall25"]
+points = PackedVector2Array(0, -144, 0, 144)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall26" type="StaticBody2D" parent="Rooms/Bathroom"]
+position = Vector2(240, 0)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Bathroom/Wall26"]
+shape = SubResource("wall_26")
+
+[node name="Visual" type="Line2D" parent="Rooms/Bathroom/Wall26"]
+points = PackedVector2Array(-240, 0, 240, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall27" type="StaticBody2D" parent="Rooms/Bathroom"]
+position = Vector2(240, 144)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Bathroom/Wall27"]
+shape = SubResource("wall_27")
+
+[node name="Visual" type="Line2D" parent="Rooms/Bathroom/Wall27"]
+points = PackedVector2Array(-240, 0, 240, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall28" type="StaticBody2D" parent="Rooms/Bathroom"]
+position = Vector2(0, 8)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Bathroom/Wall28"]
+shape = SubResource("wall_28")
+
+[node name="Visual" type="Line2D" parent="Rooms/Bathroom/Wall28"]
+points = PackedVector2Array(0, -8, 0, 8)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall29" type="StaticBody2D" parent="Rooms/Bathroom"]
+position = Vector2(0, 136)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Bathroom/Wall29"]
+shape = SubResource("wall_29")
+
+[node name="Visual" type="Line2D" parent="Rooms/Bathroom/Wall29"]
+points = PackedVector2Array(0, -8, 0, 8)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall30" type="StaticBody2D" parent="Rooms/Bathroom"]
+position = Vector2(480, 72)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Bathroom/Wall30"]
+shape = SubResource("wall_30")
+
+[node name="Visual" type="Line2D" parent="Rooms/Bathroom/Wall30"]
+points = PackedVector2Array(0, -72, 0, 72)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall31" type="StaticBody2D" parent="Rooms/Unassigned"]
+position = Vector2(240, 0)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Unassigned/Wall31"]
+shape = SubResource("wall_31")
+
+[node name="Visual" type="Line2D" parent="Rooms/Unassigned/Wall31"]
+points = PackedVector2Array(-240, 0, 240, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall32" type="StaticBody2D" parent="Rooms/Unassigned"]
+position = Vector2(240, 144)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Unassigned/Wall32"]
+shape = SubResource("wall_32")
+
+[node name="Visual" type="Line2D" parent="Rooms/Unassigned/Wall32"]
+points = PackedVector2Array(-240, 0, 240, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall33" type="StaticBody2D" parent="Rooms/Unassigned"]
+position = Vector2(0, 8)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Unassigned/Wall33"]
+shape = SubResource("wall_33")
+
+[node name="Visual" type="Line2D" parent="Rooms/Unassigned/Wall33"]
+points = PackedVector2Array(0, -8, 0, 8)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall34" type="StaticBody2D" parent="Rooms/Unassigned"]
+position = Vector2(0, 136)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Unassigned/Wall34"]
+shape = SubResource("wall_34")
+
+[node name="Visual" type="Line2D" parent="Rooms/Unassigned/Wall34"]
+points = PackedVector2Array(0, -8, 0, 8)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall35" type="StaticBody2D" parent="Rooms/Unassigned"]
+position = Vector2(480, 72)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/Unassigned/Wall35"]
+shape = SubResource("wall_35")
+
+[node name="Visual" type="Line2D" parent="Rooms/Unassigned/Wall35"]
+points = PackedVector2Array(0, -72, 0, 72)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall36" type="StaticBody2D" parent="Rooms/DirectorOffice"]
+position = Vector2(240, 0)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/DirectorOffice/Wall36"]
+shape = SubResource("wall_36")
+
+[node name="Visual" type="Line2D" parent="Rooms/DirectorOffice/Wall36"]
+points = PackedVector2Array(-240, 0, 240, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall37" type="StaticBody2D" parent="Rooms/DirectorOffice"]
+position = Vector2(240, 224)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/DirectorOffice/Wall37"]
+shape = SubResource("wall_37")
+
+[node name="Visual" type="Line2D" parent="Rooms/DirectorOffice/Wall37"]
+points = PackedVector2Array(-240, 0, 240, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall38" type="StaticBody2D" parent="Rooms/DirectorOffice"]
+position = Vector2(0, 112)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/DirectorOffice/Wall38"]
+shape = SubResource("wall_38")
+
+[node name="Visual" type="Line2D" parent="Rooms/DirectorOffice/Wall38"]
+points = PackedVector2Array(0, -112, 0, 112)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall39" type="StaticBody2D" parent="Rooms/DirectorOffice"]
+position = Vector2(480, 28)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/DirectorOffice/Wall39"]
+shape = SubResource("wall_39")
+
+[node name="Visual" type="Line2D" parent="Rooms/DirectorOffice/Wall39"]
+points = PackedVector2Array(0, -28, 0, 28)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall40" type="StaticBody2D" parent="Rooms/DirectorOffice"]
+position = Vector2(480, 196)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/DirectorOffice/Wall40"]
+shape = SubResource("wall_40")
+
+[node name="Visual" type="Line2D" parent="Rooms/DirectorOffice/Wall40"]
+points = PackedVector2Array(0, -28, 0, 28)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall41" type="StaticBody2D" parent="Rooms/MyOffice"]
+position = Vector2(240, 0)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/MyOffice/Wall41"]
+shape = SubResource("wall_41")
+
+[node name="Visual" type="Line2D" parent="Rooms/MyOffice/Wall41"]
+points = PackedVector2Array(-240, 0, 240, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall42" type="StaticBody2D" parent="Rooms/MyOffice"]
+position = Vector2(240, 224)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/MyOffice/Wall42"]
+shape = SubResource("wall_42")
+
+[node name="Visual" type="Line2D" parent="Rooms/MyOffice/Wall42"]
+points = PackedVector2Array(-240, 0, 240, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall43" type="StaticBody2D" parent="Rooms/MyOffice"]
+position = Vector2(0, 28)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/MyOffice/Wall43"]
+shape = SubResource("wall_43")
+
+[node name="Visual" type="Line2D" parent="Rooms/MyOffice/Wall43"]
+points = PackedVector2Array(0, -28, 0, 28)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall44" type="StaticBody2D" parent="Rooms/MyOffice"]
+position = Vector2(0, 196)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/MyOffice/Wall44"]
+shape = SubResource("wall_44")
+
+[node name="Visual" type="Line2D" parent="Rooms/MyOffice/Wall44"]
+points = PackedVector2Array(0, -28, 0, 28)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall45" type="StaticBody2D" parent="Rooms/MyOffice"]
+position = Vector2(480, 112)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/MyOffice/Wall45"]
+shape = SubResource("wall_45")
+
+[node name="Visual" type="Line2D" parent="Rooms/MyOffice/Wall45"]
+points = PackedVector2Array(0, -112, 0, 112)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
+
+[node name="Wall46" type="StaticBody2D" parent="."]
+position = Vector2(576, 1440)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="./Wall46"]
+shape = SubResource("wall_46")
+
+[node name="Visual" type="Line2D" parent="./Wall46"]
+points = PackedVector2Array(-96, 0, 96, 0)
+width = 12.0
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
+z_index = 2
