@@ -1,6 +1,9 @@
 extends SceneTree
 
 func _initialize() -> void:
+    call_deferred("_run_checks")
+
+func _run_checks() -> void:
     var scene: PackedScene = load("res://institute_layout.tscn")
     if scene == null:
         push_error("Institute scene cannot be loaded")
