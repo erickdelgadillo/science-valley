@@ -39,16 +39,16 @@ position = Vector2(-6, 1)
 script = ExtResource("2_uw7jv")
 
 [node name="Sprite" type="Sprite2D" parent="Player" unique_id=2102034906]
-position = Vector2(278.00003, 466.00006)
+position = Vector2(0, 0)
 scale = Vector2(0.18, 0.18)
 texture = ExtResource("3_e2xd3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=742969372]
-position = Vector2(278, 466)
+position = Vector2(0, 0)
 shape = SubResource("RectangleShape2D_k56jn")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1988309676]
-position = Vector2(277, 467)
+position = Vector2(0, 0)
 
 [node name="Walls" type="TileMapLayer" parent="." unique_id=1734943374]
 position = Vector2(-1, 1)
