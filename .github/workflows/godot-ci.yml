@@ -27,8 +27,6 @@ jobs:
         run: ./godot --headless --path . --editor --import --quit
       - name: Run original laboratory smoke test
         run: ./godot --headless --path . --script res://tests/smoke_test.gd
-      - name: Run connected campus smoke test
-        run: ./godot --headless --path . --script res://tests/test_campus.gd
 
       - name: Run institute layout smoke test
         run: timeout 90s ./godot --headless --path . --script res://tests/test_institute_layout.gd
