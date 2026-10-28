@@ -29,3 +29,6 @@ jobs:
         run: ./godot --headless --path . --script res://tests/smoke_test.gd
       - name: Run connected campus smoke test
         run: ./godot --headless --path . --script res://tests/test_campus.gd
+
+      - name: Validate two-floor research institute
+        run: ./godot --headless --path . --script res://tests/test_institute.gd
