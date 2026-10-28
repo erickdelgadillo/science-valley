@@ -18,7 +18,7 @@ const ROOMS_1 := [
     {"label":"BAÑO UNISEX","rect":Rect2(672,1024,480,144),"color":Color("#e5dbed"),"door":"left","lab":false},
     {"label":"SIN ASIGNAR","rect":Rect2(672,1168,480,144),"color":Color("#eeeae2"),"door":"left","lab":false},
     {"label":"DESPACHO DEL DIRECTOR","rect":Rect2(0,1216,480,224),"color":Color("#ead4c1"),"door":"right","lab":false},
-    {"label":"MI DESPACHO","rect":Rect2(672,1312,480,128),"color":Color("#f0ddbd"),"door":"left","lab":false}
+    {"label":"MI DESPACHO","rect":Rect2(672,1216,480,224),"color":Color("#f0ddbd"),"door":"left","lab":false}
 ]
 var current_floor: int = 0
 var layout_root: Node2D
