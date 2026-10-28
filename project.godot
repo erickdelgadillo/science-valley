@@ -47,6 +47,11 @@ move_right={
 ]
 }
 
+interact={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":69)]
+}
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -54,8 +59,3 @@ move_right={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-
-interact={
-"deadzone": 0.2,
-"events": [Object(InputEventKey,"physical_keycode":69)]
-}
