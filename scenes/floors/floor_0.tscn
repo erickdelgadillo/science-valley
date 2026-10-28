@@ -95,12 +95,12 @@ size = Vector2(1164, 12)
 [node name="Rooms" type="Node2D" parent="."]
 
 [node name="Distributor" type="Polygon2D" parent="."]
-color = Color("#dddcd7")
+color = Color(0.866667, 0.862745, 0.843137, 1)
 polygon = PackedVector2Array(Vector2(0, 0), Vector2(1152, 0), Vector2(1152, 96), Vector2(0, 96))
 position = Vector2(0, 640)
 
 [node name="Corridor" type="Polygon2D" parent="."]
-color = Color("#dddcd7")
+color = Color(0.866667, 0.862745, 0.843137, 1)
 polygon = PackedVector2Array(Vector2(0, 0), Vector2(192, 0), Vector2(192, 704), Vector2(0, 704))
 position = Vector2(480, 736)
 
@@ -110,7 +110,7 @@ metadata/is_lab = true
 metadata/room_size = Vector2(1152, 640)
 
 [node name="Floor" type="Polygon2D" parent="Rooms/WetLab"]
-color = Color("#b9ddd4")
+color = Color(0.72549, 0.866667, 0.831373, 1)
 polygon = PackedVector2Array(Vector2(0, 0), Vector2(1152, 0), Vector2(1152, 640), Vector2(0, 640))
 position = Vector2(0, 0)
 
@@ -124,7 +124,7 @@ metadata/is_lab = false
 metadata/room_size = Vector2(480, 288)
 
 [node name="Floor" type="Polygon2D" parent="Rooms/Unassigned1"]
-color = Color("#eeeae2")
+color = Color(0.933333, 0.917647, 0.886275, 1)
 polygon = PackedVector2Array(Vector2(0, 0), Vector2(480, 0), Vector2(480, 288), Vector2(0, 288))
 position = Vector2(0, 0)
 
@@ -138,7 +138,7 @@ metadata/is_lab = false
 metadata/room_size = Vector2(480, 288)
 
 [node name="Floor" type="Polygon2D" parent="Rooms/Unassigned2"]
-color = Color("#eeeae2")
+color = Color(0.933333, 0.917647, 0.886275, 1)
 polygon = PackedVector2Array(Vector2(0, 0), Vector2(480, 0), Vector2(480, 288), Vector2(0, 288))
 position = Vector2(0, 0)
 
@@ -152,7 +152,7 @@ metadata/is_lab = false
 metadata/room_size = Vector2(480, 416)
 
 [node name="Floor" type="Polygon2D" parent="Rooms/Unassigned3"]
-color = Color("#eeeae2")
+color = Color(0.933333, 0.917647, 0.886275, 1)
 polygon = PackedVector2Array(Vector2(0, 0), Vector2(480, 0), Vector2(480, 416), Vector2(0, 416))
 position = Vector2(0, 0)
 
@@ -166,7 +166,7 @@ metadata/is_lab = false
 metadata/room_size = Vector2(480, 416)
 
 [node name="Floor" type="Polygon2D" parent="Rooms/Unassigned4"]
-color = Color("#eeeae2")
+color = Color(0.933333, 0.917647, 0.886275, 1)
 polygon = PackedVector2Array(Vector2(0, 0), Vector2(480, 0), Vector2(480, 416), Vector2(0, 416))
 position = Vector2(0, 0)
 
@@ -175,7 +175,7 @@ position = Vector2(14, 16)
 text = "SIN ASIGNAR 4"
 
 [node name="Garden" type="Polygon2D" parent="."]
-color = Color("#acd3a5")
+color = Color(0.67451, 0.827451, 0.647059, 1)
 polygon = PackedVector2Array(Vector2(0, 0), Vector2(1152, 0), Vector2(1152, 640), Vector2(0, 640))
 position = Vector2(0, 1440)
 
@@ -184,7 +184,7 @@ position = Vector2(14, 1456)
 text = "PATIO EXTERIOR"
 
 [node name="StairsFloor" type="Polygon2D" parent="."]
-color = Color("#bfd3e8")
+color = Color(0.74902, 0.827451, 0.909804, 1)
 polygon = PackedVector2Array(Vector2(0, 0), Vector2(126, 0), Vector2(126, 80), Vector2(0, 80))
 position = Vector2(32, 648)
 
@@ -193,7 +193,7 @@ position = Vector2(40, 665)
 text = "ESCALERA [E]"
 
 [node name="LiftFloor" type="Polygon2D" parent="."]
-color = Color("#d4c8e5")
+color = Color(0.831373, 0.784314, 0.898039, 1)
 polygon = PackedVector2Array(Vector2(0, 0), Vector2(126, 0), Vector2(126, 80), Vector2(0, 80))
 position = Vector2(994, 648)
 
@@ -211,7 +211,7 @@ shape = SubResource("wall_1")
 [node name="Visual" type="Line2D" parent="Rooms/WetLab/Wall1"]
 points = PackedVector2Array(Vector2(-576, 0), Vector2(576, 0))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall2" type="StaticBody2D" parent="Rooms/WetLab"]
@@ -224,7 +224,7 @@ shape = SubResource("wall_2")
 [node name="Visual" type="Line2D" parent="Rooms/WetLab/Wall2"]
 points = PackedVector2Array(Vector2(-260, 0), Vector2(260, 0))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall3" type="StaticBody2D" parent="Rooms/WetLab"]
@@ -237,7 +237,7 @@ shape = SubResource("wall_3")
 [node name="Visual" type="Line2D" parent="Rooms/WetLab/Wall3"]
 points = PackedVector2Array(Vector2(-260, 0), Vector2(260, 0))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall4" type="StaticBody2D" parent="Rooms/WetLab"]
@@ -250,7 +250,7 @@ shape = SubResource("wall_4")
 [node name="Visual" type="Line2D" parent="Rooms/WetLab/Wall4"]
 points = PackedVector2Array(Vector2(0, -320), Vector2(0, 320))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall5" type="StaticBody2D" parent="Rooms/WetLab"]
@@ -263,7 +263,7 @@ shape = SubResource("wall_5")
 [node name="Visual" type="Line2D" parent="Rooms/WetLab/Wall5"]
 points = PackedVector2Array(Vector2(0, -320), Vector2(0, 320))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall6" type="StaticBody2D" parent="Rooms/Unassigned1"]
@@ -276,7 +276,7 @@ shape = SubResource("wall_6")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned1/Wall6"]
 points = PackedVector2Array(Vector2(-240, 0), Vector2(240, 0))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall7" type="StaticBody2D" parent="Rooms/Unassigned1"]
@@ -289,7 +289,7 @@ shape = SubResource("wall_7")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned1/Wall7"]
 points = PackedVector2Array(Vector2(-240, 0), Vector2(240, 0))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall8" type="StaticBody2D" parent="Rooms/Unassigned1"]
@@ -302,7 +302,7 @@ shape = SubResource("wall_8")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned1/Wall8"]
 points = PackedVector2Array(Vector2(0, -144), Vector2(0, 144))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall9" type="StaticBody2D" parent="Rooms/Unassigned1"]
@@ -315,7 +315,7 @@ shape = SubResource("wall_9")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned1/Wall9"]
 points = PackedVector2Array(Vector2(0, -44), Vector2(0, 44))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall10" type="StaticBody2D" parent="Rooms/Unassigned1"]
@@ -328,7 +328,7 @@ shape = SubResource("wall_10")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned1/Wall10"]
 points = PackedVector2Array(Vector2(0, -44), Vector2(0, 44))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall11" type="StaticBody2D" parent="Rooms/Unassigned2"]
@@ -341,7 +341,7 @@ shape = SubResource("wall_11")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned2/Wall11"]
 points = PackedVector2Array(Vector2(-240, 0), Vector2(240, 0))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall12" type="StaticBody2D" parent="Rooms/Unassigned2"]
@@ -354,7 +354,7 @@ shape = SubResource("wall_12")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned2/Wall12"]
 points = PackedVector2Array(Vector2(-240, 0), Vector2(240, 0))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall13" type="StaticBody2D" parent="Rooms/Unassigned2"]
@@ -367,7 +367,7 @@ shape = SubResource("wall_13")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned2/Wall13"]
 points = PackedVector2Array(Vector2(0, -44), Vector2(0, 44))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall14" type="StaticBody2D" parent="Rooms/Unassigned2"]
@@ -380,7 +380,7 @@ shape = SubResource("wall_14")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned2/Wall14"]
 points = PackedVector2Array(Vector2(0, -44), Vector2(0, 44))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall15" type="StaticBody2D" parent="Rooms/Unassigned2"]
@@ -393,7 +393,7 @@ shape = SubResource("wall_15")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned2/Wall15"]
 points = PackedVector2Array(Vector2(0, -144), Vector2(0, 144))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall16" type="StaticBody2D" parent="Rooms/Unassigned3"]
@@ -406,7 +406,7 @@ shape = SubResource("wall_16")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned3/Wall16"]
 points = PackedVector2Array(Vector2(-240, 0), Vector2(240, 0))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall17" type="StaticBody2D" parent="Rooms/Unassigned3"]
@@ -419,7 +419,7 @@ shape = SubResource("wall_17")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned3/Wall17"]
 points = PackedVector2Array(Vector2(-240, 0), Vector2(240, 0))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall18" type="StaticBody2D" parent="Rooms/Unassigned3"]
@@ -432,7 +432,7 @@ shape = SubResource("wall_18")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned3/Wall18"]
 points = PackedVector2Array(Vector2(0, -208), Vector2(0, 208))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall19" type="StaticBody2D" parent="Rooms/Unassigned3"]
@@ -445,7 +445,7 @@ shape = SubResource("wall_19")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned3/Wall19"]
 points = PackedVector2Array(Vector2(0, -76), Vector2(0, 76))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall20" type="StaticBody2D" parent="Rooms/Unassigned3"]
@@ -458,7 +458,7 @@ shape = SubResource("wall_20")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned3/Wall20"]
 points = PackedVector2Array(Vector2(0, -76), Vector2(0, 76))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall21" type="StaticBody2D" parent="Rooms/Unassigned4"]
@@ -471,7 +471,7 @@ shape = SubResource("wall_21")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned4/Wall21"]
 points = PackedVector2Array(Vector2(-240, 0), Vector2(240, 0))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall22" type="StaticBody2D" parent="Rooms/Unassigned4"]
@@ -484,7 +484,7 @@ shape = SubResource("wall_22")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned4/Wall22"]
 points = PackedVector2Array(Vector2(-240, 0), Vector2(240, 0))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall23" type="StaticBody2D" parent="Rooms/Unassigned4"]
@@ -497,7 +497,7 @@ shape = SubResource("wall_23")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned4/Wall23"]
 points = PackedVector2Array(Vector2(0, -76), Vector2(0, 76))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall24" type="StaticBody2D" parent="Rooms/Unassigned4"]
@@ -510,7 +510,7 @@ shape = SubResource("wall_24")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned4/Wall24"]
 points = PackedVector2Array(Vector2(0, -76), Vector2(0, 76))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall25" type="StaticBody2D" parent="Rooms/Unassigned4"]
@@ -523,7 +523,7 @@ shape = SubResource("wall_25")
 [node name="Visual" type="Line2D" parent="Rooms/Unassigned4/Wall25"]
 points = PackedVector2Array(Vector2(0, -208), Vector2(0, 208))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall26" type="StaticBody2D" parent="."]
@@ -536,7 +536,7 @@ shape = SubResource("wall_26")
 [node name="Visual" type="Line2D" parent="./Wall26"]
 points = PackedVector2Array(Vector2(-260, 0), Vector2(260, 0))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall27" type="StaticBody2D" parent="."]
@@ -549,7 +549,7 @@ shape = SubResource("wall_27")
 [node name="Visual" type="Line2D" parent="./Wall27"]
 points = PackedVector2Array(Vector2(-260, 0), Vector2(260, 0))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall28" type="StaticBody2D" parent="."]
@@ -562,7 +562,7 @@ shape = SubResource("wall_28")
 [node name="Visual" type="Line2D" parent="./Wall28"]
 points = PackedVector2Array(Vector2(0, -320), Vector2(0, 320))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall29" type="StaticBody2D" parent="."]
@@ -575,7 +575,7 @@ shape = SubResource("wall_29")
 [node name="Visual" type="Line2D" parent="./Wall29"]
 points = PackedVector2Array(Vector2(0, -320), Vector2(0, 320))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
 
 [node name="Wall30" type="StaticBody2D" parent="."]
@@ -588,5 +588,5 @@ shape = SubResource("wall_30")
 [node name="Visual" type="Line2D" parent="./Wall30"]
 points = PackedVector2Array(Vector2(-576, 0), Vector2(576, 0))
 width = 12.0
-default_color = Color("#45545c")
+default_color = Color(0.270588, 0.329412, 0.360784, 1)
 z_index = 2
